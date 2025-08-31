@@ -1,0 +1,117 @@
+
+
+
+button{
+    background-color:rgb(18, 18, 134);
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(18, 18, 134),rgba(88, 0, 88, 0.914));
+    padding: 10px;
+}
+h2{
+    width: 600px;
+    max-width: 700px;
+    background-color: aliceblue;
+    margin: 100px auto 20px;      /*100px to top and auto to left right 20px to botom*/
+    padding: 40px 30px 70px;       /*40px to top and 30px to left right 70px to bottom*/
+    border-radius: 10px;
+
+
+}
+Input{
+ display: flex;
+    justify-content: center;         /* make content to center */
+    align-items: center;
+    background:#edeef0 ;             
+    border-radius: 50px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+}
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin:6px 12px ;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+  transform: scaleX(1.1);
+  transition: 1s;
+}
+h1{
+    
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#00ffff;
+    opacity: 0.6;
+}
+p{
+    margin: 250px;
+    margin-left: 250px;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#00ffff;
+    opacity: 0.6;
+}
+@keyframes fadeInOut {
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+    
+}
+h1{
+    animation:fadeInOut 4s  ease-in;
+    
+}
+@keyframes slideInRight {
+    0%{
+        opacity: 0;
+    }
+    50%{
+
+    }
+
+    
+}
+p{
+    animation:slideInRight 3s ease-in;
+}
+
+@media (max-width: 600px) {
+  #todoInput {
+    width: 80%;
+    max-width: none;
+    margin: 10px auto;
+    display: block;
+  }
+
+  #go {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  #todoList li {
+    width: 90%;
+  }
+}
